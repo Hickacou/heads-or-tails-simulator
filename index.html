@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Heads or tails simulator</title>
+        <meta charset="utf-8" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/script.min.js" defer></script>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="pause-notification">
+            Press Space to Pause/Play
+        </div>
+        <div id="results">
+            <div id="pause">Pause</div>
+        </div>
+        <div id="stats">
+            <div id="heads">Heads : <div class='stat'></div></div>
+            <div id="tails">tails : <div class='stat'></div></div>
+            <div id="total">Total : <div class='stat'></div></div>
+            <div id="fifty">50%/50% : <div class='stat'></div></div>
+            <div id="diff">Difference : <div class='stat'></div></div>
+        </div>
+        <div id="options">
+            <h1>Options</h1>
+            <div id="pause-at-fifty">Pause at  50%/50% : <input type="checkbox" id="check-fifty-pause" /></div>
+            <div id="throw-interval">Interval between each throw (ms) : <input type="text" id="interval-input" /><button id="OK-interval">OK</button></div>
+            <button id="reset-button">Reset</button>
+        </div>
+        <div id="values">
+            <div id="heads">
+                <h1>Heads</h1>
+                <div class="percent stat"></div>
+                <div class="count stat"></div>
+            </div>
+            <div id="tails">
+                <h1>Tails</h1>
+                <div class="percent stat"></div>
+                <div class="count stat"></div>
+            </div>
+        </div>
+        <div id="history"></div>
+
+    </body>
+</html>
